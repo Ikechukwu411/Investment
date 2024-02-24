@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="./Style.css" />
+    <script defer type="module" src="./main.js"></script>
+    <script defer type="module" src="./signup.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <section class="section signup">
+        <div class="container signupContainer">
+          <div class="columns">
+            <div class="column welcome">
+              <div class="topleft">
+                <!-- <p></p> -->
+              </div>
+              <div class="welcomeText">
+                <h2
+                  class="is-size-1-desktop is-size-2-mobile has-text-weight-bold"
+                >
+                  Welcome Back
+                </h2>
+                <p class="is-size-3-desktop is-size-4-mobile mt-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                  fugiat nihil dolorem eum magnam totam.
+                </p>
+                <a href="/login" class="button mt-5 is-large">Sign In</a>
+              </div>
+              <div class="returnHome">
+                <p class="mr-3 is-size-4 has-text-white">Return to Home Page</p>
+                <a href="/home">DI-FI</a>
+              </div>
+            </div>
+
+            <div class="column data">
+              <div class="dataText">
+                <h1 class="is-size-1">Sign Up</h1>
+                <p class="is-size-3">Create Account.</p>
+                <form action="/signup" class="field" id="form" method="POST">
+                  <div class="field">
+                    <label class="label is-medium">Email</label>
+                    <div class="control">
+                      <input
+                        class="input is-medium"
+                        type="email"
+                        placeholder="Text input"
+                        id="email"
+                      />
+                      <i class="fas fa-exclamation-circle failure-icon"></i>
+                      <i class="far fa-check-circle success-icon"></i>
+                    </div>
+                    <div class="error"></div>
+                  </div>
+                  <div class="field">
+                    <label class="label is-medium">Password</label>
+                    <div class="control">
+                      <input
+                        class="input is-medium"
+                        type="password"
+                        placeholder="Text input"
+                        id="password"
+                      />
+                      <i class="fas fa-exclamation-circle failure-icon"></i>
+                      <i class="far fa-check-circle success-icon"></i>
+                    </div>
+                    <div class="error"></div>
+                  </div>
+                  <div class="field">
+                    <label class="label is-medium">Confirm-password</label>
+                    <div class="control">
+                      <input
+                        class="input is-medium"
+                        type="password"
+                        placeholder="Text input"
+                        id="confirm"
+                      />
+                      <i class="fas fa-exclamation-circle failure-icon"></i>
+                      <i class="far fa-check-circle success-icon"></i>
+                    </div>
+                    <div class="error"></div>
+                  </div>
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button signupbtn is-medium">Submit</button>
+                    </div>
+                    <div class="control">
+                      <button class="button is-link is-light is-medium">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

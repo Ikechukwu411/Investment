@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="./withdrawstyles.css" />
+
+    <title>Withdraw Page</title>
+  </head>
+  <body>
+    <section class="section">
+      <a href="/dashboard"><i class="fa-solid fa-arrow-left"></i></a>
+      <form class="form" id="form">
+        <div class="field">
+          <label class="label">Address</label>
+          <div class="control">
+            <input
+              class="input is-primary is-medium"
+              type="text"
+              id="address"
+              placeholder="BTC Address"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Amount</label>
+          <div class="control">
+            <input
+              class="input is-primary is-medium"
+              type="number"
+              id="Amount"
+              placeholder="BTC Amount"
+              required
+            />
+          </div>
+        </div>
+
+        <a
+          class="button is-primary is-responsive mb-3"
+          id="Transfer"
+          role="button"
+          type="submit"
+        >
+          Transfer
+        </a>
+      </form>
+      <div class="thankYou">
+        <img src="./Images/transaction icon.png" alt="" />
+        <h1 class="is-size-4 mt-4">Transaction Successful</h1>
+        <p class="mt-4">
+          Your Transaction has been processed successfully, click ok to continue
+        </p>
+        <a class="button mt-3 ok" role="button" id="ok">OK</a>
+      </div>
+    </section>
+    <script defer src="./Withdraw.js"></script>
+  </body>
+</html>

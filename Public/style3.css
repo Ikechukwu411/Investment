@@ -1,0 +1,299 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f4f6fb;
+  font-family: "Clash Display", sans-serif;
+  position: relative;
+}
+.navbar,
+.menu {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #13182c;
+}
+.menu {
+  height: 100%;
+}
+aside {
+  background-color: white;
+  height: 100%;
+  border-right: 2px solid #13182c;
+}
+
+.menu-list a {
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 500;
+}
+.menu-list a:nth-child(1) {
+  margin-top: 2rem;
+}
+.figures {
+  margin: auto auto;
+  width: 100%;
+}
+.figures > .column {
+  margin-right: 1rem;
+  height: 7rem;
+  padding-bottom: 1rem;
+}
+
+/* */
+.sales {
+  height: 7rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.bigColumntxt {
+  padding-top: 6rem;
+}
+.balance {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.iconcontainer {
+  background-color: #00d1b2;
+  display: block;
+  padding: 1rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  position: relative;
+  margin-top: -1.7rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#purple {
+  background-color: #7f00ff;
+}
+
+.iconcontainer i {
+  font-size: 20px;
+  color: white;
+}
+.icontext {
+  margin-left: -4rem;
+}
+
+/* Calender */
+.wrapper {
+  width: 280px;
+  background-color: white;
+}
+.wrapper header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .icons {
+  display: flex;
+}
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1rem;
+  user-select: none;
+  border-radius: 50%;
+}
+header .icons span:hover {
+  background: #f2f2f2;
+}
+header .current-date {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+/* !Dashboard header */
+.logo {
+  color: #13182c;
+  font-weight: bold;
+}
+.dash {
+  margin-top: 5rem;
+}
+.dashheader {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  color: black;
+}
+.dasboardcontainer {
+  margin: 4rem auto;
+}
+.graph {
+  width: 90%;
+  margin: auto auto;
+  /* height: 10rem; */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: black;
+}
+.bigColumn {
+  background-color: rgba(237, 237, 241, 0.06);
+}
+.fa-bitcoin {
+  color: orange;
+}
+
+#bottomNavContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #13182c;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 1000;
+}
+.nav-item {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+#bottomNav {
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.transferContainer,
+.depositContainer {
+  width: 60%;
+  min-width: 350px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100;
+}
+
+.transferModal,
+.depositModal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  :0 ;
+  background-color: rgba(0, 0, 0, 0.519);
+  z-index: 1100;
+}
+.transfercontent,
+.depositcontent {
+  width: 100%;
+  font-weight: 500;
+  color: black;
+}
+.transferCancel,
+.depositCancel {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 1100;
+}
+.fa-x {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.fa-copy {
+  color: orange;
+  font-size: 40px;
+  cursor: pointer;
+}
+.upload-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #13182c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.upload-btn:hover {
+  background-color: #13182c;
+}
+input[type="file"] {
+  display: none;
+}
+.active {
+  background-color: #00d1b2;
+  color: white;
+}
+
+/* .popupcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 7000;
+}
+.popup {
+  width: 350px;
+  height: 350px;
+  background-color: #00d1b2;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  top: 0;
+  left: 50%;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.openpopup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+} */
+
+.tv-widget-container {
+  background-color: #1a1a1a !important;
+}

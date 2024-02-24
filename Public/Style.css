@@ -1,0 +1,608 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: hsl(210, 36%, 96%);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --black-color: rgb(2, 2, 2);
+  --white-color: #fff;
+  --orange-color: orange;
+  --behance: #13182c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Clash Display", sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: var(--clr-grey-1);
+  background-color: var(--white-color);
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.navbar {
+  background-color: #13182c;
+  padding: 1rem;
+}
+
+.navbar-end > .navbar-item {
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+.navbar-end > .navbar-item:hover {
+  color: var(--black-color);
+  background-color: #6cf8b4;
+  border-radius: 3px;
+}
+.navbar-burger {
+  color: white;
+}
+.navbar-burger:hover {
+  color: var(--white-color);
+}
+.navbar-start {
+  margin-left: 30rem;
+}
+.navbar-start > .navbar-item {
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar-start > .navbar-item:hover {
+  background-color: #6cf8b4;
+  color: var(--clr-grey-1);
+  border-radius: 1px;
+}
+.btn {
+  font-family: "Clash Display", sans-serif;
+  text-transform: capitalize;
+}
+.hero {
+  width: 100%;
+  /* height: 80vh; */
+  background: linear-gradient(to top right, #fff, #eef9f1);
+}
+.underline {
+  padding: 1rem;
+  width: 150px;
+  height: 120px;
+  transform: skew(20deg);
+  background: #6cf8b4;
+}
+.btn1 {
+  background-color: var(--behance);
+  color: var(--white-color);
+  font-size: 16px;
+  padding: 1rem 3rem;
+}
+.btn1:hover {
+  color: var(--white-color);
+}
+.image > img {
+  width: 450px;
+}
+h1 {
+  line-height: 1.7;
+}
+.info {
+  background-color: var(--behance);
+}
+.info h2 {
+  color: var(--white-color);
+  font-weight: bold;
+}
+#parallelogram {
+  width: 150px;
+  height: 100px;
+  transform: skew(20deg);
+  background: #6cf8b4;
+  color: #13182c;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.info-images > img {
+  width: 250px;
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+.info-images {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transition: transform 0.5s ease;
+}
+.info-images::-webkit-scrollbar {
+  display: none;
+}
+.reveal-overflow {
+  transform: translateX(-50%);
+  overflow-x: visible;
+}
+.tab-content {
+  background-color: #c5cbe4;
+  padding: 1rem;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.icons > i {
+  font-size: 23px;
+}
+.icons {
+  display: inline-block;
+  padding: 3rem 4rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+.yellow {
+  background-color: #e1ff9e;
+}
+.green {
+  background-color: #ffedb6;
+}
+.pink {
+  background-color: #ffcbc4;
+}
+.sky {
+  background-color: #c7ccff;
+}
+.price {
+  box-shadow: var(--dark-shadow);
+  border-radius: 8px;
+  background-color: var(--white-color);
+  height: 10rem;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.choose p {
+  font-family: sans-serif;
+}
+.buttons1 {
+  margin-top: 2rem;
+  display: inline-block;
+}
+.choice {
+  padding: 3rem;
+}
+.buttons1 .button {
+  background-color: var(--behance);
+  color: var(--white-color);
+  /* font-size: 18px; */
+  /* padding: 1rem 3rem; */
+  display: inline-block;
+}
+
+.progress > progress {
+  color: #13182c;
+}
+.parallax {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  mix-blend-mode: luminosity;
+  opacity: 1;
+  background-size: cover;
+  background-image: url("../Images/ourmission.png");
+}
+.customerbutton {
+  background-color: #13182c;
+  color: white;
+  display: block;
+  margin: 2rem auto;
+}
+.customertext {
+  padding-top: 4rem;
+}
+.slideshow-container > .slides {
+  display: none;
+}
+
+.slideshow-container {
+  /* position: relative;
+  margin: auto; */
+  margin-top: 5rem;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #13182c;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text-review > p {
+  font-family: sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+.text-review {
+  padding-top: 3rem;
+}
+.text-review > i {
+  font-size: 28px;
+}
+.Name {
+  text-align: center;
+  margin-top: 3rem;
+}
+.Name h3 {
+  font-size: 24px;
+}
+.Name p {
+  font-size: 12px;
+}
+.rating {
+  text-align: center;
+  margin-top: 3rem;
+}
+.rating i {
+  font-size: 16px;
+  color: orange;
+}
+.social-media > a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.social-media {
+  margin-top: 4rem;
+}
+.navbar-menu {
+  background-color: #13182c;
+}
+.about-us {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../Images/Aboutus2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  visibility: visible;
+  opacity: 1;
+}
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #13182ca6;
+}
+.help {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../Images/Aboutus2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+.help::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background-color: #13182ca6;
+}
+.help h2 {
+  font-size: 32px;
+  text-align: center;
+  padding: auto 2rem;
+  margin: auto auto;
+  width: 80%;
+  color: white;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+.help > .container > button {
+  text-align: center;
+  color: #13182c;
+}
+.help > .container > button:hover {
+  background-color: #13182c;
+  color: white;
+}
+.anotherHero {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url(./Images/services1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20rem;
+}
+.job {
+  height: 20rem;
+  background-color: #292c3d;
+  border-radius: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.job i {
+  font-size: 25px;
+  padding-top: 2rem;
+}
+#cryp {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+#cryp:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.trading {
+  margin-top: 10rem;
+}
+#roundedX {
+  background-color: #6cf8b4;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.UrderedList > li {
+  margin-bottom: 10px;
+}
+.signup {
+  width: 100%;
+  background-color: white;
+}
+.signup1 {
+  width: 100%;
+  background-color: white;
+}
+.signupContainer {
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  /* max-width: 600px; */
+  /* height: 80vh; */
+  width: 100%;
+  background-color: white;
+}
+.welcome {
+  height: 80vh;
+  position: relative;
+  background-image: url(./Images/why-choose-1-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome1 {
+  /* background-color: #12af82; */
+  height: 80vh;
+  position: relative;
+  background-image: url(./Images/backgroundSignup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcome1::before,
+.welcome::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+  background-color: #13182c89;
+  z-index: 1;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 40px solid white;
+  border-top: 40px solid white;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.678);
+  z-index: 2;
+}
+
+.welcomeText {
+  text-align: center;
+  padding-top: 5rem;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.welcomeText > button {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.welcomeText > button:hover {
+  background-color: white;
+  color: #13182c;
+}
+.returnHome {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  position: relative;
+  z-index: 2;
+}
+
+.returnHome a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.dataText h1 {
+  color: var(--behance);
+  font-weight: 500;
+  margin: auto 2rem;
+  padding-top: 4rem;
+}
+.dataText p {
+  margin: auto 2rem;
+  color: var(--behance);
+}
+.field {
+  margin: auto auto;
+  width: 90%;
+}
+.is-grouped {
+  margin-top: 2rem;
+}
+.control:focus {
+  border: 1px solid #12af82;
+}
+.label {
+  color: #13182c;
+  font-weight: normal;
+  font-size: 16px;
+}
+.signupbtn {
+  background-color: #13182c;
+  color: var(--white-color);
+}
+.signupbtn:hover {
+  color: white;
+}
+/* Login Styling */
+.login-container {
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.298);
+  width: 70%;
+  margin: 10rem auto;
+  max-width: 480px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.login {
+  background-color: #f4f6fb;
+  height: 100%;
+}
+.greenBox {
+  background-color: #00d1b2;
+  height: 8rem;
+  width: 80%;
+  position: absolute;
+  left: 11%;
+  margin-top: -4rem;
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 23px 23px 58px #c1c1c1, -23px -23px 58px #ffffff;
+}
+.greenBox h1 {
+  color: white;
+  font-style: italic;
+  font-size: 32px;
+  margin: auto;
+  text-align: center;
+}
+form {
+  padding-top: 6rem;
+}
+.form > button {
+  display: flex;
+  width: inherit;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+.drop {
+  width: 5rem;
+  height: 5rem;
+  background-color: #00d1b2;
+  color: white;
+  padding: auto;
+}
+.drop p {
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+}
+.control i {
+  position: absolute;
+
+  font-size: 12px;
+}
+.success-icon,
+.failure-icon {
+  right: 1rem;
+  top: 1rem;
+  opacity: 0;
+}
+.failure-icon,
+.error {
+  color: red;
+}
+.success-icon {
+  color: green;
+}
+.error {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}

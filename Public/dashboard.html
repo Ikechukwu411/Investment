@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="./style3.css" />
+    <script defer type="module" src="./main3.js"></script>
+    <title>Crypto Investment Website</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar is-fixed-top">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <p class="logo is-size-4-desktop">DI-FI</p>
+          </a>
+
+          <a role="button" class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="navbar-menu ">
+          <div class="navbar-start is-hidden-desktop">
+            <a href="#" class="navbar-item">Dashboard</a>
+            <a href="/analytics" class="navbar-item">Analytics</a>
+            <a href="" class="navbar-item">Feed</a>
+            <a href="" class="navbar-item">Transactions</a>
+            <a href="" class="navbar-item">Wallet</a>
+            <a href="" class="navbar-item">Profile</a>
+          </div>
+          <div class="navbar-end">
+            <!-- Add user icon -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                <img src="./Images/Loan.jpg" alt="User" width="28" height="28">
+              </a>
+              <!-- Dropdown menu -->
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Settings</a>
+                <a class="navbar-item" href="#" onclick="signOut()">Sign Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="">
+        <div class="columns">
+          <div class="column is-hidden-mobile">
+            <aside class="menu pl-3 pt-6">
+              <div class="menu-list">
+                <a href="/dashboard" class="active">Dashboard</a>
+                <a href="/analytics">Analytics</a>
+                <a href="#">Feed</a>
+                <a href="#">Transactions</a>
+                <a href="#">Wallet</a>
+                <a href="#">Profile</a>
+              </div>
+            </aside>
+          </div>
+          <div class="column is-four-fifths bigColumn">
+            <div class="container dasboardcontainer">
+              <div class="box graph">
+                <div class="columns p-4">
+                  <div class="column">
+                    <p><span>Welcome</span><span class="ml-3">John</span></p>
+                    <p>Total Balance</p>
+                    <h1 class="is-size-2-desktop is-size-3-mobile mt-3-mobile">
+                      $0 - USD
+                      <span class="ml-3"
+                        ><i class="fa-brands fa-bitcoin"></i
+                      ></span>
+                    </h1>
+                  </div>
+                  <div class="column mt-5">
+                    <a class="button is-responsive is-primary" href="https://www.binance.com/en" target="_blank">Buy</a>
+                    <a class="button is-responsive is-primary" href="/withdraw">Withdraw</a>
+                    <a class="button is-responsive is-primary" href="/deposit">
+                      Deposit
+                    </a>
+                    <butto disabled class="button  is-responsive mt-6-mobile is-primary">
+                      Loan
+                    </button>
+                  </div>
+                </div>
+              </div>
+         <!-- Trading View -->
+              
+              
+          <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:350px;width:90%; margin: auto;">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  new tradingview.widget({
+  "autosize": true,
+  "symbol": "BINANCE:BTCUSDT",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "support_host": "https://www.tradingview.com"
+})
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+              <!-- Fetch Api -->
+              <div class="box graph">
+                <p>Price Chart</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Rank</th>
+                      <th>Coin</th>
+                      <th>Price</th>
+                      <th <abbr title="Market Cap" class="is-hidden-mobile"></abbr>MC</th>
+                      <th class="is-hidden-mobile">Supply</th>
+                    </tr>
+                  </thead>
+                  <tbody id="assetTableBody">
+                  </tbody>
+                </table>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="bottomNavContainer">
+        <nav id="bottomNav"></nav>
+      </div>
+    </main>
+
+    <!-- Transfer fund -->
+   
+    <!-- Transfer Ends Here -->
+
+    <!-- Deposit -->
+    <!-- <div class="depositModal hidden"></div>
+    <div class="depositCancel hidden">
+      <i class="fa-solid fa-x"></i>
+    </div>
+    <div class="depositContainer hidden container box">
+      <div class="depositcontent">
+        <p class="has-text-centered">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <h2 class="is-size-4 has-text-centered">BTC <span><i class="fa-brands fa-bitcoin"></i></span></h2>
+        <div class="container has-text-centered">
+          <h3 id="text-to-copy" class="is-size-5">btc4rfr85sdjafreumythopnbe</h3>
+          <span><i class="fa-solid fa-copy"></i></span>
+        </div>
+        <div class="container has-text-centered">
+          <h2>Upload Your Receipt</h2>
+          <p>Click the button below to upload your receipt:</p>
+          <label for="file-upload" class="upload-btn">Choose File</label>
+          <input type="file" id="file-upload">
+          
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Deposit Ends Here -->
+
+    <!-- Thank You starts Here -->
+
+     
+   
+
+  </body>
+</html>
